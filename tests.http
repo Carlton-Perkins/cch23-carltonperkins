@@ -20,3 +20,14 @@ GET http://localhost:8000/1/10
 GET http://localhost:8000/1/4/5/8/10
 
 // 27
+
+### d4
+GET http://localhost:8000/4/strength
+Content-Type: application/json
+
+[
+  { "name": "Dasher", "strength": 5 },
+  { "name": "Dancer", "strength": 6 },
+  { "name": "Prancer", "strength": 4 },
+  { "name": "Vixen", "strength": 7 }
+]

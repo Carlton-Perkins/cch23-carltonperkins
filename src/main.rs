@@ -2,6 +2,7 @@ mod d1;
 mod d4;
 mod d6;
 mod d7;
+mod d8;
 mod n1;
 
 use actix_web::web::{scope, ServiceConfig};
@@ -16,6 +17,7 @@ async fn main() -> ShuttleActixWeb<impl FnOnce(&mut ServiceConfig) + Send + Clon
         cfg.configure(d4::config);
         cfg.configure(d6::config);
         cfg.configure(d7::config);
+        cfg.configure(d8::config);
     };
 
     Ok(config.into())

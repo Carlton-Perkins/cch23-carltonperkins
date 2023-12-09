@@ -31,3 +31,7 @@ Content-Type: application/json
   { "name": "Prancer", "strength": 4 },
   { "name": "Vixen", "strength": 7 }
 ]
+
+### d8
+
+GET http://localhost:8000/8/weight/25
